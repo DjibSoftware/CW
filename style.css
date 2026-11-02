@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+}
+
+p,
+input {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+}
+
+.middle {
+    border: solid black;
+    padding: 10px;
+    height: auto;
+}
+
+.top {
+    background-color: rgb(212, 242, 255);
+    padding: 15px;
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+    border-bottom: solid rgb(43, 146, 230) 1px;
+    box-shadow: 10px 1px 50px black;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    gap: 10px;
+}
+
+.Bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(212, 242, 255);
+    padding: 15px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 30px;
+    border-top: solid rgb(43, 146, 230) 1px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    box-shadow: 10px 1px 50px black;
+}
+
+.inp {
+    padding: 10px;
+    width: 60%;
+    border: solid rgba(0, 0, 0, 0.322) 1px;
+    border-radius: 40px;
+    background-color: white;
+}
+
+.sendBtn {
+    border: solid rgba(0, 0, 0, 0.322) 1px;
+    border-radius: 50%;
+    padding: 10px;
+    rotate: -90deg;
+    background-color: white;
+}
+
+.sendBtn:active {
+    opacity: 0.8;
+    border: solid rgb(0, 0, 0) 1px;
+}
