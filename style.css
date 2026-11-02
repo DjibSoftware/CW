@@ -63,7 +63,7 @@ input {
     background-color: white;
 }
 
-.sendBtn:active {
+button:active {
     opacity: 0.8;
     border: solid rgb(0, 0, 0) 1px;
 }
