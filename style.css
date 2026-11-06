@@ -1,75 +1,118 @@
-body {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: rgb(255, 255, 255);
-}
-
-p,
-input {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 16px;
-}
-
-.middle {
-    border: solid black;
-    padding: 10px;
-    height: auto;
-}
-
-img {
-    pointer-events: none;
-}
-
-.top {
-    background-color: rgb(212, 242, 255);
-    padding: 15px;
-    width: 100%;
-    padding-left: 0px;
-    padding-right: 0px;
-    border-bottom: solid rgb(43, 146, 230) 1px;
-    box-shadow: 10px 1px 50px black;
-    display: flex;
-    justify-content: center;
-    place-items: center;
-    gap: 10px;
-}
-
-.Bottom {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    background-color: rgb(212, 242, 255);
-    padding: 15px;
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-bottom: 30px;
-    border-top: solid rgb(43, 146, 230) 1px;
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    box-shadow: 10px 1px 50px black;
-}
-
-.inp {
-    padding: 10px;
-    width: 50%;
-    border: solid rgba(0, 0, 0, 0.322) 1px;
-    border-radius: 40px;
-    background-color: white;
-}
-
-.sendBtn {
-    border: solid rgba(0, 0, 0, 0.322) 1px;
-    border-radius: 40PX;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 10px;
-    background-color: white;
-    font-size: x-large;
-}
-
-.sendBtn:active {
-    opacity: 0.8;
-    border: solid rgb(0, 0, 0) 1px;
-}
+fetch(`${URL}/3`, {
+                method: "GET",
+            }).then(response => response.json())
+            .then(data => {
+                if (data.imageTwo != ``) {
+                    if (data.imageTwo === `gattouz`) {
+                        document.getElementById("middle").innerHTML += ` <img style="border-radius: 10px;" src="https://media.tenor.com/5GBuNQdyHL0AAAAM/ad-laurent-fusion.gif" alt="gattouz" width="100px" height="100px">`
+                        fetch(`${URL}/3`, {
+                            method: 'PUT',
+                            headers: {
+                                "Content-Type": "application/json"
+                            },
+                            body: JSON.stringify({
+                                imageTwo: ""
+                            })
+                        })
+                    } else if (data.imageTwo === `MiaK`) {
+                        document.getElementById("middle").innerHTML += `<img style="border-radius: 10px;" src="https://media.tenor.com/eDPqjzF8yhAAAAAM/mia-khalifa-mia.gif" alt="MiaK" width="100px" height="100px">`
+                        fetch(`${URL}/3`, {
+                            method: 'PUT',
+                            headers: {
+                                "Content-Type": "application/json"
+                            },
+                            body: JSON.stringify({
+                                imageTwo: ""
+                            })
+                        })
+                    } else if (data.imageTwo === `seriously`) {
+                        document.getElementById("middle").innerHTML += `<img style="border-radius: 10px;" src="https://media.tenor.com/bgo1Qr8CvPgAAAAM/looking-serious.gif" alt="seriously" width="100px" height="100px">`
+                        fetch(`${URL}/3`, {
+                            method: 'PUT',
+                            headers: {
+                                "Content-Type": "application/json"
+                            },
+                            body: JSON.stringify({
+                                imageTwo: ""
+                            })
+                        })
+                    } else if (data.imageTwo === `oldMan`) {
+                        document.getElementById("middle").innerHTML += `<img style="border-radius: 10px;" src="https://media.tenor.com/jm1-sKpAykQAAAAM/bruh-really.gif" alt="oldMan" width="100px" height="100px">`
+                        fetch(`${URL}/3`, {
+                            method: 'PUT',
+                            headers: {
+                                "Content-Type": "application/json"
+                            },
+                            body: JSON.stringify({
+                                imageTwo: ""
+                            })
+                        })
+                    } else if (data.imageTwo === `hellNah`) {
+                        document.getElementById("middle").innerHTML += `<img style="border-radius: 10px;" src="https://media.tenor.com/Y_LH4fKgpqAAAAAM/tiktok-meme-tiktok.gif" alt="hellNah" width="100px" height="100px">`
+                        fetch(`${URL}/3`, {
+                            method: 'PUT',
+                            headers: {
+                                "Content-Type": "application/json"
+                            },
+                            body: JSON.stringify({
+                                imageTwo: ""
+                            })
+                        })
+                    } else if (data.imageTwo === `WaitAMinute`) {
+                        document.getElementById("middle").innerHTML += `            <img style="border-radius: 10px;" src="https://media.tenor.com/xs08BdM6dEYAAAAM/maga-maga-ling.gif" alt="WaitAMinute" width="100px" height="100px">`
+                        fetch(`${URL}/3`, {
+                            method: 'PUT',
+                            headers: {
+                                "Content-Type": "application/json"
+                            },
+                            body: JSON.stringify({
+                                imageTwo: ""
+                            })
+                        })
+                    } else if (data.imageTwo === `fiveStars`) {
+                        document.getElementById("middle").innerHTML += `<img style="border-radius: 10px;" src="https://media.tenor.com/IrJGIKLZ-M4AAAAM/five-stars-5-stars.gif" alt="fiveStars" width="100px" height="100px">`
+                        fetch(`${URL}/3`, {
+                            method: 'PUT',
+                            headers: {
+                                "Content-Type": "application/json"
+                            },
+                            body: JSON.stringify({
+                                imageTwo: ""
+                            })
+                        })
+                    } else if (data.imageTwo === `crazyMonster`) {
+                        document.getElementById("middle").innerHTML += `<img style="border-radius: 10px;" src="https://media.tenor.com/n9LhTZez6yAAAAA1/crazy-monster-stan-twitter.webp" alt="crazyMonster" width="100px" height="100px">`
+                        fetch(`${URL}/3`, {
+                            method: 'PUT',
+                            headers: {
+                                "Content-Type": "application/json"
+                            },
+                            body: JSON.stringify({
+                                imageTwo: ""
+                            })
+                        })
+                    } else if (data.imageTwo === `shocked`) {
+                        document.getElementById("middle").innerHTML += `<img style="border-radius: 10px;" src="https://media.tenor.com/fK_4h5l7fCoAAAAm/lsg.webp" alt="shocked" width="100px" height="100px">`
+                        fetch(`${URL}/3`, {
+                            method: 'PUT',
+                            headers: {
+                                "Content-Type": "application/json"
+                            },
+                            body: JSON.stringify({
+                                imageTwo: ""
+                            })
+                        })
+                    } else if (data.imageTwo === `jackpot`) {
+                        document.getElementById("middle").innerHTM += `<img style="border-radius: 10px;" src="https://media.tenor.com/8QdLOsSoECwAAAA1/struck-gold-jackpot.webp" alt="jackpot" width="100px" height="100px">`
+                        fetch(`${URL}/3`, {
+                            method: 'PUT',
+                            headers: {
+                                "Content-Type": "application/json"
+                            },
+                            body: JSON.stringify({
+                                imageTwo: ""
+                            })
+                        })
+                    }
+                }
+            })
