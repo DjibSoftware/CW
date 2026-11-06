@@ -58,6 +58,7 @@ img {
 
 .top {
     background-color: rgba(114, 170, 233, 0.527);
+    position:fixed;
     padding: 15px;
     width: 100%;
     padding-left: 0px;
