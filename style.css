@@ -2,12 +2,7 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    display: flex;
-    background-image: url(./bg.jpg);
-    background-position: center;
-    flex-direction: column;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.103);
 }
 
 p,
