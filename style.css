@@ -1,118 +1,183 @@
-fetch(`${URL}/3`, {
-                method: "GET",
-            }).then(response => response.json())
-            .then(data => {
-                if (data.imageTwo != ``) {
-                    if (data.imageTwo === `gattouz`) {
-                        document.getElementById("middle").innerHTML += ` <img style="border-radius: 10px;" src="https://media.tenor.com/5GBuNQdyHL0AAAAM/ad-laurent-fusion.gif" alt="gattouz" width="100px" height="100px">`
-                        fetch(`${URL}/3`, {
-                            method: 'PUT',
-                            headers: {
-                                "Content-Type": "application/json"
-                            },
-                            body: JSON.stringify({
-                                imageTwo: ""
-                            })
-                        })
-                    } else if (data.imageTwo === `MiaK`) {
-                        document.getElementById("middle").innerHTML += `<img style="border-radius: 10px;" src="https://media.tenor.com/eDPqjzF8yhAAAAAM/mia-khalifa-mia.gif" alt="MiaK" width="100px" height="100px">`
-                        fetch(`${URL}/3`, {
-                            method: 'PUT',
-                            headers: {
-                                "Content-Type": "application/json"
-                            },
-                            body: JSON.stringify({
-                                imageTwo: ""
-                            })
-                        })
-                    } else if (data.imageTwo === `seriously`) {
-                        document.getElementById("middle").innerHTML += `<img style="border-radius: 10px;" src="https://media.tenor.com/bgo1Qr8CvPgAAAAM/looking-serious.gif" alt="seriously" width="100px" height="100px">`
-                        fetch(`${URL}/3`, {
-                            method: 'PUT',
-                            headers: {
-                                "Content-Type": "application/json"
-                            },
-                            body: JSON.stringify({
-                                imageTwo: ""
-                            })
-                        })
-                    } else if (data.imageTwo === `oldMan`) {
-                        document.getElementById("middle").innerHTML += `<img style="border-radius: 10px;" src="https://media.tenor.com/jm1-sKpAykQAAAAM/bruh-really.gif" alt="oldMan" width="100px" height="100px">`
-                        fetch(`${URL}/3`, {
-                            method: 'PUT',
-                            headers: {
-                                "Content-Type": "application/json"
-                            },
-                            body: JSON.stringify({
-                                imageTwo: ""
-                            })
-                        })
-                    } else if (data.imageTwo === `hellNah`) {
-                        document.getElementById("middle").innerHTML += `<img style="border-radius: 10px;" src="https://media.tenor.com/Y_LH4fKgpqAAAAAM/tiktok-meme-tiktok.gif" alt="hellNah" width="100px" height="100px">`
-                        fetch(`${URL}/3`, {
-                            method: 'PUT',
-                            headers: {
-                                "Content-Type": "application/json"
-                            },
-                            body: JSON.stringify({
-                                imageTwo: ""
-                            })
-                        })
-                    } else if (data.imageTwo === `WaitAMinute`) {
-                        document.getElementById("middle").innerHTML += `            <img style="border-radius: 10px;" src="https://media.tenor.com/xs08BdM6dEYAAAAM/maga-maga-ling.gif" alt="WaitAMinute" width="100px" height="100px">`
-                        fetch(`${URL}/3`, {
-                            method: 'PUT',
-                            headers: {
-                                "Content-Type": "application/json"
-                            },
-                            body: JSON.stringify({
-                                imageTwo: ""
-                            })
-                        })
-                    } else if (data.imageTwo === `fiveStars`) {
-                        document.getElementById("middle").innerHTML += `<img style="border-radius: 10px;" src="https://media.tenor.com/IrJGIKLZ-M4AAAAM/five-stars-5-stars.gif" alt="fiveStars" width="100px" height="100px">`
-                        fetch(`${URL}/3`, {
-                            method: 'PUT',
-                            headers: {
-                                "Content-Type": "application/json"
-                            },
-                            body: JSON.stringify({
-                                imageTwo: ""
-                            })
-                        })
-                    } else if (data.imageTwo === `crazyMonster`) {
-                        document.getElementById("middle").innerHTML += `<img style="border-radius: 10px;" src="https://media.tenor.com/n9LhTZez6yAAAAA1/crazy-monster-stan-twitter.webp" alt="crazyMonster" width="100px" height="100px">`
-                        fetch(`${URL}/3`, {
-                            method: 'PUT',
-                            headers: {
-                                "Content-Type": "application/json"
-                            },
-                            body: JSON.stringify({
-                                imageTwo: ""
-                            })
-                        })
-                    } else if (data.imageTwo === `shocked`) {
-                        document.getElementById("middle").innerHTML += `<img style="border-radius: 10px;" src="https://media.tenor.com/fK_4h5l7fCoAAAAm/lsg.webp" alt="shocked" width="100px" height="100px">`
-                        fetch(`${URL}/3`, {
-                            method: 'PUT',
-                            headers: {
-                                "Content-Type": "application/json"
-                            },
-                            body: JSON.stringify({
-                                imageTwo: ""
-                            })
-                        })
-                    } else if (data.imageTwo === `jackpot`) {
-                        document.getElementById("middle").innerHTM += `<img style="border-radius: 10px;" src="https://media.tenor.com/8QdLOsSoECwAAAA1/struck-gold-jackpot.webp" alt="jackpot" width="100px" height="100px">`
-                        fetch(`${URL}/3`, {
-                            method: 'PUT',
-                            headers: {
-                                "Content-Type": "application/json"
-                            },
-                            body: JSON.stringify({
-                                imageTwo: ""
-                            })
-                        })
-                    }
-                }
-            })
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    background-image: url(./bg.jpg);
+    background-position: center;
+    flex-direction: column;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+p,
+input {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+}
+
+.parent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.middle {
+    padding: 10px;
+    position: absolute;
+    width: 90%;
+    top: 85px;
+    min-height: 60%;
+    max-height: 60%;
+    overflow: scroll;
+    margin: 40px;
+}
+
+dialog {
+    border: solid rgba(25, 2, 151, 0.973);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    background-color: rgb(79, 161, 255);
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: center;
+    place-items: center;
+    gap: 10px;
+    border-radius: 10px;
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.836);
+    backdrop-filter: blur(10px);
+}
+
+dialog:focus {
+    outline: none;
+}
+
+img {
+    pointer-events: none;
+}
+
+.top {
+    background-color: rgba(114, 170, 233, 0.527);
+    padding: 15px;
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+    border-bottom: solid rgba(0, 0, 0, 0.233) 1px;
+    box-shadow: 10px 1px 50px black;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    gap: 30px;
+    backdrop-filter: blur(10px);
+}
+
+.Bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(64, 191, 245, 0.493);
+    padding: 15px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 30px;
+    border-top: solid rgba(0, 0, 0, 0.226) 1px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    box-shadow: 1px 1px 150px black;
+    backdrop-filter: blur(10px);
+}
+
+.container {
+    height: 100vh;
+}
+
+.inp {
+    padding: 10px;
+    width: 50%;
+    border: solid rgba(0, 0, 0, 0.322) 1px;
+    border-radius: 40px;
+    background-color: white;
+}
+
+.sendBtn {
+    border: solid rgba(0, 0, 0, 0.322) 1px;
+    border-radius: 40PX;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    background-color: white;
+    font-size: x-large;
+    transition: all 200ms;
+}
+
+.sendBtn:active {
+    opacity: 0.8;
+    border: solid rgb(0, 0, 0) 1px;
+    scale: 0.9;
+}
+
+@keyframes loading {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes border {
+    0%,
+    100% {
+        border: solid 2px rgb(3, 129, 3);
+    }
+    50% {
+        border: 2px solid #5efa50;
+    }
+}
+
+.gifsImg {
+    background-color: white;
+    border: solid rgb(228, 227, 227) 2px;
+    position: absolute;
+    bottom: 0;
+    width: 80%;
+    place-content: center;
+    max-height: 400px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-bottom: 40px;
+    overflow: scroll;
+    padding-top: 120px;
+    animation: gif 400ms ease-in-out;
+}
+
+.gifs {
+    padding-top: 0px;
+}
+
+.gifs:active {
+    scale: 0.9;
+    opacity: 0.8;
+}
+
+.gifsImg::backdrop {
+    background-color: rgba(0, 0, 0, 0);
+    backdrop-filter: blur(0px);
+}
+
+@keyframes gif {
+    from {
+        transform: translateY(40px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
