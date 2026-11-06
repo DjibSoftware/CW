@@ -10,18 +10,87 @@
 </head>
 
 <body>
-    <div class="top">
-        <img src="https://cdn-icons-png.flaticon.com/128/3177/3177440.png" alt="user" height="50px" style="border: solid rgb(1, 180, 60) 2px; border-radius: 50%;">
-        <p>Connected Succesfully</p>
-    </div>
-    <div class="middle">
+    <script src="./script.js"></script>
+    <div class="parent">
+        <div class="top">
+            <img src="https://cdn-icons-png.flaticon.com/128/9187/9187604.png" alt="user" height="50px" style="animation: border 10s infinite; border: solid rgb(1, 180, 60) 2px; border-radius: 50%;">
+            <p id="username"></p>
+            <button onclick="User.showModal(), document.getElementById(`User`).style.display = `flex`" class="sendBtn" style="padding: 0; background-color: rgba(0, 0, 0, 0); border: none;">🖊️</button>
+        </div>
+        <p style="text-align: center; font-size: small; font-weight: bolder;">Always scroll down for new messages !!!</p>
+        <div class="container" style="overflow: scroll; display: flex; justify-content: center; place-items: center;">
+            <div class="middle" style="overflow: scroll;" id="middle">
 
+            </div>
+        </div>
+        <div class="Bottom ">
+            <button class="sendBtn " onclick="gifsImg.showModal(), document.getElementById(`gifsImg`).style.display = `flex`" style="padding-bottom: 5px; ">📎</button>
+            <input type="text " id="inpBar" class="inp " placeholder="Send a message... ">
+            <button class="sendBtn " onclick="sendMessage() ">📩</button>
+        </div>
     </div>
-    <div class="Bottom">
-        <button class="sendBtn" onclick="sendGif()">📎</button>
-        <input type="text" id="inpBar" class="inp" placeholder="Send a message...">
-        <button class="sendBtn" onclick="sendBtn()">📩</button>
-    </div>
+    <dialog id="User" style="display: flex; flex-direction: column; justify-content: center; place-items: center;">
+        Type in Username
+        <br>
+        <br>
+        <input type="text " id="UserInput" maxlength="10" class="inp " style="width: 70%; border-radius: 10px;" placeholder="Username">
+        <br>
+        <button class="sendBtn" style=" padding: 15px; font-size: large; border-radius: 10px;" onclick="UseSet()">Confirm</button>
+    </dialog>
+    <dialog id="loading">
+        <img style="animation: loading 3s infinite linear;" src="https://cdn-icons-png.flaticon.com/128/2767/2767294.png" alt="loading" height="50px">
+        <p>
+            Syncing...
+        </p>
+        <button onclick="serverReset.showModal()" class="sendBtn" style="font-size: medium; padding-bottom: 0px; padding: 5px; border-radius: 10px; background-color: red; color: white; display: none;" id="resetBtn">
+            Reset Server
+        </button>
+    </dialog>
+    <dialog id="serverReset">
+        <p style="text-align: center;">Input password <br> in order to reset the server <br> (everything will be wiped off the server)</p>
+        <input type="password" placeholder="Password" id="pass" class="inp" style="border-radius: 10px; text-align: center;">
+        <br>
+        <button onclick="servReset()" class="sendBtn" style="font-size: medium; padding-bottom: 0px; padding: 5px; border-radius: 10px; background-color: red; color: white; ">
+           Confirm Reset Server
+        </button>
+    </dialog>
+    <dialog id="gifsImg" class="gifsImg" style="display: none;">
+
+        <p style="text-align: center;">
+            <button class="sendBtn" style="position: absolute; top: 10px; left: 10px; font-size: medium; background-color: red; color: white; padding-bottom: 0px; border-radius: 10px; " onclick="gifsImg.close(), document.getElementById(`gifsImg`).style.display =`none`">X</button>
+        </p>
+
+        <div class="gifs" onclick="currentGif = `gattouz`, sendGif()">
+            <img style="border-radius: 10px;" src="https://media.tenor.com/5GBuNQdyHL0AAAAM/ad-laurent-fusion.gif" alt="gattouz" width="100px" height="100px">
+        </div>
+        <div class="gifs" onclick="currentGif = `MiaK`, sendGif()">
+            <img style="border-radius: 10px;" src="https://media.tenor.com/eDPqjzF8yhAAAAAM/mia-khalifa-mia.gif" alt="MiaK" width="100px" height="100px">
+        </div>
+        <div class="gifs" onclick="currentGif = `seriously`, sendGif()">
+            <img style="border-radius: 10px;" src="https://media.tenor.com/bgo1Qr8CvPgAAAAM/looking-serious.gif" alt="seriously" width="100px" height="100px">
+        </div>
+        <div class="gifs" onclick="currentGif = `oldMan`, sendGif()">
+            <img style="border-radius: 10px;" src="https://media.tenor.com/jm1-sKpAykQAAAAM/bruh-really.gif" alt="oldMan" width="100px" height="100px">
+        </div>
+        <div class="gifs" onclick="currentGif = `hellNah`, sendGif()">
+            <img style="border-radius: 10px;" src="https://media.tenor.com/Y_LH4fKgpqAAAAAM/tiktok-meme-tiktok.gif" alt="hellNah" width="100px" height="100px">
+        </div>
+        <div class="gifs" onclick="currentGif = `WaitAMinute`, sendGif()">
+            <img style="border-radius: 10px;" src="https://media.tenor.com/xs08BdM6dEYAAAAM/maga-maga-ling.gif" alt="WaitAMinute" width="100px" height="100px">
+        </div>
+        <div class="gifs" onclick="currentGif = `fiveStars`, sendGif()">
+            <img style="border-radius: 10px;" src="https://media.tenor.com/IrJGIKLZ-M4AAAAM/five-stars-5-stars.gif" alt="fiveStars" width="100px" height="100px">
+        </div>
+        <div class="gifs" onclick="currentGif = `crazyMonster`, sendGif()">
+            <img style="border-radius: 10px;" src="https://media.tenor.com/n9LhTZez6yAAAAA1/crazy-monster-stan-twitter.webp" alt="crazyMonster" width="100px" height="100px">
+        </div>
+        <div class="gifs" onclick="currentGif = `shocked`, sendGif()">
+            <img style="border-radius: 10px;" src="https://media.tenor.com/fK_4h5l7fCoAAAAm/lsg.webp" alt="shocked" width="100px" height="100px">
+        </div>
+        <div class="gifs" onclick="currentGif = `jackpot`, sendGif()">
+            <img style="border-radius: 10px;" src="https://media.tenor.com/8QdLOsSoECwAAAA1/struck-gold-jackpot.webp" alt="jackpot" width="100px" height="100px">
+        </div>
+    </dialog>
 </body>
 
 </html>
