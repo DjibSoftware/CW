@@ -72,7 +72,7 @@ img {
 }
 
 .Bottom {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
     background-color: rgba(64, 191, 245, 0.493);
@@ -84,7 +84,6 @@ img {
     display: flex;
     gap: 10px;
     justify-content: center;
-    box-shadow: 1px 1px 150px black;
     backdrop-filter: blur(10px);
 }
 
