@@ -280,7 +280,7 @@ setInterval(() => {
             .then(data => {
                 if (data.imageTwo != ``) {
                     if (data.imageTwo === `gattouz`) {
-                        document.getElementById("middle").innerHTML += ` <img style="border-radius: 10px;" src="https://media.tenor.com/5GBuNQdyHL0AAAAM/ad-laurent-fusion.gif" alt="gattouz" width="100px" height="100px">`
+                        document.getElementById("middle").innerHTML += ` <img style="margin-left:70%; border-radius: 10px;" src="https://media.tenor.com/5GBuNQdyHL0AAAAM/ad-laurent-fusion.gif" alt="gattouz" width="100px" height="100px">`
                         fetch(`${URL}/3`, {
                             method: 'PUT',
                             headers: {
@@ -291,7 +291,7 @@ setInterval(() => {
                             })
                         })
                     } else if (data.imageTwo === `MiaK`) {
-                        document.getElementById("middle").innerHTML += `<img style="border-radius: 10px;" src="https://media.tenor.com/eDPqjzF8yhAAAAAM/mia-khalifa-mia.gif" alt="MiaK" width="100px" height="100px">`
+                        document.getElementById("middle").innerHTML += `<img style=" margin-left:70%; border-radius: 10px;" src="https://media.tenor.com/eDPqjzF8yhAAAAAM/mia-khalifa-mia.gif" alt="MiaK" width="100px" height="100px">`
                         fetch(`${URL}/3`, {
                             method: 'PUT',
                             headers: {
@@ -302,7 +302,7 @@ setInterval(() => {
                             })
                         })
                     } else if (data.imageTwo === `seriously`) {
-                        document.getElementById("middle").innerHTML += `<img style="border-radius: 10px;" src="https://media.tenor.com/bgo1Qr8CvPgAAAAM/looking-serious.gif" alt="seriously" width="100px" height="100px">`
+                        document.getElementById("middle").innerHTML += `<img style=" margin-left:70%; border-radius: 10px;" src="https://media.tenor.com/bgo1Qr8CvPgAAAAM/looking-serious.gif" alt="seriously" width="100px" height="100px">`
                         fetch(`${URL}/3`, {
                             method: 'PUT',
                             headers: {
@@ -313,7 +313,7 @@ setInterval(() => {
                             })
                         })
                     } else if (data.imageTwo === `oldMan`) {
-                        document.getElementById("middle").innerHTML += `<img style="border-radius: 10px;" src="https://media.tenor.com/jm1-sKpAykQAAAAM/bruh-really.gif" alt="oldMan" width="100px" height="100px">`
+                        document.getElementById("middle").innerHTML += `<img style=" margin-left:70%; border-radius: 10px;" src="https://media.tenor.com/jm1-sKpAykQAAAAM/bruh-really.gif" alt="oldMan" width="100px" height="100px">`
                         fetch(`${URL}/3`, {
                             method: 'PUT',
                             headers: {
@@ -324,7 +324,7 @@ setInterval(() => {
                             })
                         })
                     } else if (data.imageTwo === `hellNah`) {
-                        document.getElementById("middle").innerHTML += `<img style="border-radius: 10px;" src="https://media.tenor.com/Y_LH4fKgpqAAAAAM/tiktok-meme-tiktok.gif" alt="hellNah" width="100px" height="100px">`
+                        document.getElementById("middle").innerHTML += `<img style="margin-left:70%; border-radius: 10px;" src="https://media.tenor.com/Y_LH4fKgpqAAAAAM/tiktok-meme-tiktok.gif" alt="hellNah" width="100px" height="100px">`
                         fetch(`${URL}/3`, {
                             method: 'PUT',
                             headers: {
@@ -335,7 +335,7 @@ setInterval(() => {
                             })
                         })
                     } else if (data.imageTwo === `WaitAMinute`) {
-                        document.getElementById("middle").innerHTML += `            <img style="border-radius: 10px;" src="https://media.tenor.com/xs08BdM6dEYAAAAM/maga-maga-ling.gif" alt="WaitAMinute" width="100px" height="100px">`
+                        document.getElementById("middle").innerHTML += `            <img style="margin-left:70%; border-radius: 10px;" src="https://media.tenor.com/xs08BdM6dEYAAAAM/maga-maga-ling.gif" alt="WaitAMinute" width="100px" height="100px">`
                         fetch(`${URL}/3`, {
                             method: 'PUT',
                             headers: {
@@ -346,7 +346,7 @@ setInterval(() => {
                             })
                         })
                     } else if (data.imageTwo === `fiveStars`) {
-                        document.getElementById("middle").innerHTML += `<img style="border-radius: 10px;" src="https://media.tenor.com/IrJGIKLZ-M4AAAAM/five-stars-5-stars.gif" alt="fiveStars" width="100px" height="100px">`
+                        document.getElementById("middle").innerHTML += `<img style="margin-left:70%; border-radius: 10px;" src="https://media.tenor.com/IrJGIKLZ-M4AAAAM/five-stars-5-stars.gif" alt="fiveStars" width="100px" height="100px">`
                         fetch(`${URL}/3`, {
                             method: 'PUT',
                             headers: {
@@ -357,7 +357,7 @@ setInterval(() => {
                             })
                         })
                     } else if (data.imageTwo === `crazyMonster`) {
-                        document.getElementById("middle").innerHTML += `<img style="border-radius: 10px;" src="https://media.tenor.com/n9LhTZez6yAAAAA1/crazy-monster-stan-twitter.webp" alt="crazyMonster" width="100px" height="100px">`
+                        document.getElementById("middle").innerHTML += `<img style=" margin-left:70%; border-radius: 10px;" src="https://media.tenor.com/n9LhTZez6yAAAAA1/crazy-monster-stan-twitter.webp" alt="crazyMonster" width="100px" height="100px">`
                         fetch(`${URL}/3`, {
                             method: 'PUT',
                             headers: {
@@ -368,7 +368,7 @@ setInterval(() => {
                             })
                         })
                     } else if (data.imageTwo === `shocked`) {
-                        document.getElementById("middle").innerHTML += `<img style="border-radius: 10px;" src="https://media.tenor.com/fK_4h5l7fCoAAAAm/lsg.webp" alt="shocked" width="100px" height="100px">`
+                        document.getElementById("middle").innerHTML += `<img style="margin-left:70%; border-radius: 10px;" src="https://media.tenor.com/fK_4h5l7fCoAAAAm/lsg.webp" alt="shocked" width="100px" height="100px">`
                         fetch(`${URL}/3`, {
                             method: 'PUT',
                             headers: {
@@ -379,7 +379,7 @@ setInterval(() => {
                             })
                         })
                     } else if (data.imageTwo === `jackpot`) {
-                        document.getElementById("middle").innerHTM += `<img style="border-radius: 10px;" src="https://media.tenor.com/8QdLOsSoECwAAAA1/struck-gold-jackpot.webp" alt="jackpot" width="100px" height="100px">`
+                        document.getElementById("middle").innerHTML += `<img style="margin-left:70%; border-radius: 10px;" src="https://media.tenor.com/8QdLOsSoECwAAAA1/struck-gold-jackpot.webp" alt="jackpot" width="100px" height="100px">`
                         fetch(`${URL}/3`, {
                             method: 'PUT',
                             headers: {
@@ -399,7 +399,7 @@ setInterval(() => {
             .then(data => {
                 if (data.imageOne != ``) {
                     if (data.imageOne === `gattouz`) {
-                        document.getElementById("middle").innerHTML += ` <img style="border-radius: 10px;" src="https://media.tenor.com/5GBuNQdyHL0AAAAM/ad-laurent-fusion.gif" alt="gattouz" width="100px" height="100px">`
+                        document.getElementById("middle").innerHTML += ` <img style="margin-left:70%; border-radius: 10px;" src="https://media.tenor.com/5GBuNQdyHL0AAAAM/ad-laurent-fusion.gif" alt="gattouz" width="100px" height="100px">`
                         fetch(`${URL}/3`, {
                             method: 'PUT',
                             headers: {
@@ -410,7 +410,7 @@ setInterval(() => {
                             })
                         })
                     } else if (data.imageOne === `MiaK`) {
-                        document.getElementById("middle").innerHTML += `<img style="border-radius: 10px;" src="https://media.tenor.com/eDPqjzF8yhAAAAAM/mia-khalifa-mia.gif" alt="MiaK" width="100px" height="100px">`
+                        document.getElementById("middle").innerHTML += `<img style="margin-left:70%; border-radius: 10px;" src="https://media.tenor.com/eDPqjzF8yhAAAAAM/mia-khalifa-mia.gif" alt="MiaK" width="100px" height="100px">`
                         fetch(`${URL}/3`, {
                             method: 'PUT',
                             headers: {
@@ -421,7 +421,7 @@ setInterval(() => {
                             })
                         })
                     } else if (data.imageOne === `seriously`) {
-                        document.getElementById("middle").innerHTML += `<img style="border-radius: 10px;" src="https://media.tenor.com/bgo1Qr8CvPgAAAAM/looking-serious.gif" alt="seriously" width="100px" height="100px">`
+                        document.getElementById("middle").innerHTML += `<img style="margin-left:70%; border-radius: 10px;" src="https://media.tenor.com/bgo1Qr8CvPgAAAAM/looking-serious.gif" alt="seriously" width="100px" height="100px">`
                         fetch(`${URL}/3`, {
                             method: 'PUT',
                             headers: {
@@ -432,7 +432,7 @@ setInterval(() => {
                             })
                         })
                     } else if (data.imageOne === `oldMan`) {
-                        document.getElementById("middle").innerHTML += `<img style="border-radius: 10px;" src="https://media.tenor.com/jm1-sKpAykQAAAAM/bruh-really.gif" alt="oldMan" width="100px" height="100px">`
+                        document.getElementById("middle").innerHTML += `<img style="margin-left:70%; border-radius: 10px;" src="https://media.tenor.com/jm1-sKpAykQAAAAM/bruh-really.gif" alt="oldMan" width="100px" height="100px">`
                         fetch(`${URL}/3`, {
                             method: 'PUT',
                             headers: {
@@ -443,7 +443,7 @@ setInterval(() => {
                             })
                         })
                     } else if (data.imageOne === `hellNah`) {
-                        document.getElementById("middle").innerHTML += `<img style="border-radius: 10px;" src="https://media.tenor.com/Y_LH4fKgpqAAAAAM/tiktok-meme-tiktok.gif" alt="hellNah" width="100px" height="100px">`
+                        document.getElementById("middle").innerHTML += `<img style="margin-left:70%; border-radius: 10px;" src="https://media.tenor.com/Y_LH4fKgpqAAAAAM/tiktok-meme-tiktok.gif" alt="hellNah" width="100px" height="100px">`
                         fetch(`${URL}/3`, {
                             method: 'PUT',
                             headers: {
@@ -454,7 +454,7 @@ setInterval(() => {
                             })
                         })
                     } else if (data.imageOne === `WaitAMinute`) {
-                        document.getElementById("middle").innerHTML += `            <img style="border-radius: 10px;" src="https://media.tenor.com/xs08BdM6dEYAAAAM/maga-maga-ling.gif" alt="WaitAMinute" width="100px" height="100px">`
+                        document.getElementById("middle").innerHTML += `<img style="margin-left:70%; border-radius: 10px;" src="https://media.tenor.com/xs08BdM6dEYAAAAM/maga-maga-ling.gif" alt="WaitAMinute" width="100px" height="100px">`
                         fetch(`${URL}/3`, {
                             method: 'PUT',
                             headers: {
@@ -465,7 +465,7 @@ setInterval(() => {
                             })
                         })
                     } else if (data.imageOne === `fiveStars`) {
-                        document.getElementById("middle").innerHTML += `<img style="border-radius: 10px;" src="https://media.tenor.com/IrJGIKLZ-M4AAAAM/five-stars-5-stars.gif" alt="fiveStars" width="100px" height="100px">`
+                        document.getElementById("middle").innerHTML += `<img style="margin-left:70%; border-radius: 10px;" src="https://media.tenor.com/IrJGIKLZ-M4AAAAM/five-stars-5-stars.gif" alt="fiveStars" width="100px" height="100px">`
                         fetch(`${URL}/3`, {
                             method: 'PUT',
                             headers: {
@@ -476,7 +476,7 @@ setInterval(() => {
                             })
                         })
                     } else if (data.imageOne === `crazyMonster`) {
-                        document.getElementById("middle").innerHTML += `<img style="border-radius: 10px;" src="https://media.tenor.com/n9LhTZez6yAAAAA1/crazy-monster-stan-twitter.webp" alt="crazyMonster" width="100px" height="100px">`
+                        document.getElementById("middle").innerHTML += `<img style="margin-left:70%; border-radius: 10px;" src="https://media.tenor.com/n9LhTZez6yAAAAA1/crazy-monster-stan-twitter.webp" alt="crazyMonster" width="100px" height="100px">`
                         fetch(`${URL}/3`, {
                             method: 'PUT',
                             headers: {
@@ -487,7 +487,7 @@ setInterval(() => {
                             })
                         })
                     } else if (data.imageOne === `shocked`) {
-                        document.getElementById("middle").innerHTML += `<img style="border-radius: 10px;" src="https://media.tenor.com/fK_4h5l7fCoAAAAm/lsg.webp" alt="shocked" width="100px" height="100px">`
+                        document.getElementById("middle").innerHTML += `<img style="margin-left:70%; border-radius: 10px;" src="https://media.tenor.com/fK_4h5l7fCoAAAAm/lsg.webp" alt="shocked" width="100px" height="100px">`
                         fetch(`${URL}/3`, {
                             method: 'PUT',
                             headers: {
@@ -498,7 +498,7 @@ setInterval(() => {
                             })
                         })
                     } else if (data.imageOne === `jackpot`) {
-                        document.getElementById("middle").innerHTM += `<img style="border-radius: 10px;" src="https://media.tenor.com/8QdLOsSoECwAAAA1/struck-gold-jackpot.webp" alt="jackpot" width="100px" height="100px">`
+                        document.getElementById("middle").innerHTML += `<img style="margin-left:70%; border-radius: 10px;" src="https://media.tenor.com/8QdLOsSoECwAAAA1/struck-gold-jackpot.webp" alt="jackpot" width="100px" height="100px">`
                         fetch(`${URL}/3`, {
                             method: 'PUT',
                             headers: {
